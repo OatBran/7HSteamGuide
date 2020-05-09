@@ -103,7 +103,7 @@
   - [Link to bottom of Readme](https://github.com/OatBran/7HSteamGuide#FFNX.cfg-Collection)
     - I have prepared a set of ffnx.cfg files that cover common setting variations
 
-11. Open 7th Heaven and browse/download catalog IRO's, or [manually download IRO mod packs](http://forums.qhimm.com/index.php) prioritize DDS converted packs.
+11. Open 7th Heaven and browse/download catalog IRO's, or [manually download IRO mod packs](http://forums.qhimm.com/index.php) prioritize [DDS converted packs.](https://forums.qhimm.com/index.php?topic=19204.0)
    - For manual IRO Downloads, Click on `Import-Mod` Button in right sidebar to open IRO import tool. 
    - Select batch/single tab and select folder/file to import from. 
    - Activate any selected catalog mods, or manually imported mods with Toggle 
