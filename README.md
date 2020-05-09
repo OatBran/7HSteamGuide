@@ -269,4 +269,4 @@
 
 **Go back to the [Forum Thread](http://forums.qhimm.com/index.php?topic=19932) and tell me what you think! Or post questions if you are having trouble!**
 
-** Join the [Discord](https://discord.gg/N6M6pKS) and hit me up on there if you want too, if posting on forums isnt your thing**
+**Join the [Discord](https://discord.gg/N6M6pKS) and hit me up on there if you want too, if posting on forums isnt your thing**
