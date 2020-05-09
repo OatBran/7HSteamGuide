@@ -100,7 +100,7 @@
        - `ff7_more_debug`
          - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes
      - SAVE the file and exit the editor.
-  - [Link to bottom of Readme](https://github.com/OatBran/7HSteamGuide#FFNX.cfg-Collection)
+  - [Link to bottom of Readme](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
     - I have prepared a set of ffnx.cfg files that cover common setting variations
 
 11. Open 7th Heaven and browse/download catalog IRO's, or [manually download IRO mod packs](http://forums.qhimm.com/index.php) prioritize [DDS converted packs.](https://forums.qhimm.com/index.php?topic=19204.0)
