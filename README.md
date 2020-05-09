@@ -267,4 +267,4 @@
 
 ## End of Guide
 
-**Go back to the [Forum Thread]() and tell me what you think! Or post questions if you are having trouble!**
+**Go back to the [Forum Thread](http://forums.qhimm.com/index.php?topic=19932) and tell me what you think! Or post questions if you are having trouble!**
