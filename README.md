@@ -210,6 +210,7 @@
 12. Import and configure the converted IRO's via the same method [outlined in steps 5 & 6 above.](https://github.com/OatBran/7HSteamGuide#PNG-To-DDS-Conversion)
 
 ## FFNx.cfg Collection
+DONT USE THESE RIGHT NOW. NEED TO UPDATE THEM FOR RECENT STABLE FFNX RELEASE!
 
 **Here are some common use case scenario settings files for you to download if you wish**
    - Click the link you want, once the page loads
