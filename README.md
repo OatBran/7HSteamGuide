@@ -1,3 +1,4 @@
+
 # FF7 7thHeaven Steam Conversion
  
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
@@ -99,29 +100,31 @@
        - `window_size_x = 1920`  
        - `window_size_y  = 1080`
          - If your `fullscreen = yes` leave both set to 0 to use your desktop resolution. 
-           - For `fullscreen = no` [Use This Chart to aid in determining your desired resolution](https://en.wikipedia.org/wiki/Display_resolution#/media/File:Vector_Video_Standards8.svg)
+         - For `fullscreen = no` [Use This Chart to aid in determining your desired resolution](https://en.wikipedia.org/wiki/Display_resolution#/media/File:Vector_Video_Standards8.svg)
      - `resolution_scale` 
        - Experiencing high RAM usage and graphical errors using many PNG texture IRO's ? 
        - Change value to 2 for better performance, [or use DDS textures.](https://github.com/OatBran/7HSteamGuide#PNG-To-DDS-Conversion)
      - `preserve_aspect` 
        - Set to `no` if you want the black sidebars removed and render stretched to window size.
-     - READ through the rest of the file and decide if you want to make other uncommon changes. Valid configuration options are listed.
-     - *Debugging Options*
-       - `show_stats`
-         - Set to `yes` to show debug related stats on the title bar if windowed / top-left corner if fullscreen
-       - `renderer_debug`
-         - Set to `yes` to show extended debug info to the screen. Dont use unless you know what to do with the info.
-       - `ff7_more_debug`
-         - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes
-     - SAVE the file and exit the editor.
-  - [Jump to bottom of Readme](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
-    - I have prepared a set of ffnx.cfg files that cover common setting variations
+   - READ through the rest of the file and decide if you want to make other uncommon changes. 
+     - Valid configuration options are listed in the .cfg file itself.
+   - *Debugging Options*
+      - `show_stats`
+        - Set to `yes` to show debug related stats on the title bar if windowed / top-left corner if fullscreen
+      - `renderer_debug`
+        - Set to `yes` to show extended debug info to the screen. Dont use unless you know what to do with the info.
+      - `ff7_more_debug`
+        - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes    
+    - SAVE the file and exit the editor.
+   
+   - [Dont Click This](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
+    - I Will prepare a set of ffnx.cfg files that cover common setting variations
 
-  - Be aware that there is no configuration option for preferred display adapter. Your primary display will be used for fullscreen runtimes.
+   - Be aware that there is no configuration option for preferred display adapter. Your primary display will be used for fullscreen runtimes.
     - It has been reported (but not confirmed!) by @Barachiel that very high DPI settings in combination with >1440p HD resolution settings can cause graphical glitches with models displayed in the game. Try lowering your DPI to <200 if possible in the event of glitchy models being displayed.
     - If you want to play on your secondary / tertiary display, you need to use windowed mode. There is a fullscreen borderless window mod on the 7H catalog that you can use in this case.
 
-  - **If you are planning on using the maximum amount of HD models/textures and/or in combination with the Cetra/ECHOS/CAMS mod, you may want to do the following**
+   - **If you are planning on using the maximum amount of HD models/textures and/or in combination with the Cetra/ECHOS/CAMS mod, you may want to do the following**
     - [Apply the Large-Address-Aware patch](https://ntcore.com/files/4gb_patch.zip) to `C:\Games\FF7\ff7.exe` allowing the game to utilize 3.5GB of RAM, effecively doubling the capacity for mod data.
 
 ## Acquiring and Installing IROs
