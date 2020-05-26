@@ -149,9 +149,10 @@
 ## PNG To DDS Conversion
 
 **How to Identify, Convert and Replace PNG-Based Texture Packs**
-  - Covers _FAQ:_**Help! Running FFNx with many texture mods feels choppy or slow!**
+  
+  - Covers _FAQ:_**Help! Running FFNx with many texture mods feels choppy or slow! Especially in battle!**
    
-   -**IMMEDIATELY DISABLE the "60FPS Battles" Mod located in the "Animations" Catalog! This mod in combination with FFNx severely hinders in-battle performance and has no positive effect on the game whatsoever. DO NOT IGNORE THIS**
+   - **IMMEDIATELY DISABLE the "60FPS Battles" Mod located in the "Animations" Catalog! This mod in combination with FFNx severely hinders in-battle performance and has no positive effect on the game whatsoever. DO NOT IGNORE THIS**
 
 1. [Download the SYW Pack Builder](https://forums.qhimm.com/index.php?topic=19204.0)
 
