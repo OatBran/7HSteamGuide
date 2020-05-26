@@ -1,20 +1,29 @@
-
-## FF7 7thHeaven Steam Conversion
+# FF7 7thHeaven Steam Conversion
  
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
    - Written By: [OatBran](http://forums.qhimm.com/index.php?action=profile;u=27603) 
    - For 7H Version 2.0.3.406 & [FF7 Steam Build 115956](https://steamdb.info/depot/39143/manifests/) \[ ENGLISH \]
-     - Last Guide Update: May 9th, 2020
+     - Last Guide Update: May 25th, 2020
+
+# Pre-Requisets
 
 **Be Absolutely Sure you have done the following before following this guide**
-   - **[Purchase a LEGAL copy of Final Fantasy 7 on Steam](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/)**
-   - **There is Absolutely NO SUPPORT for Pirated copies of the game**
-   - **This can include certain unofficial "Language Packs" - Be Cautious**
+  - **[Purchase a LEGAL copy of Final Fantasy 7 on Steam](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/)**
+    - 7th Heaven is ONLY compatible with the ENGLISH version of FF7 [Dragoon_2004 Provides a simple manual conversion process outlined here](http://puu.sh/FNUYc/8e15a54ec8.png)
+      - Or you can try the bundled GameConverter.exe that comes with 7th Heaven located in its resources folder.
+  - **There is Absolutely [NO SUPPORT](https://github.com/OatBran/7HSteamGuide#YARRRRRR) for Pirated copies of the game**
+    - **This can include certain unofficial "Language Packs" - Be Cautious**
+  - **Change your [Folder View Settings](https://kb.blackbaud.com/articles/Article/41890) to properly display files, to avoid renaming mistakes**
+  - **Be aware of the version of Windows you are using. FFNx is incompatible with windows 7 or earlier as of version 1.6.1**
+    - **You can [still download FFNx v1.6.1 here](https://github.com/julianxhokaxhiu/FFNx/releases/tag/1.6.1) if you are determined to use Win7**
 
+
+# Beginning The Process
 
 **If you are Upgrading from a currently working 7H v2+ modded installation**
-   - Skip to Step 6
-   - Covers _FAQ:_ **Help! My Game Constantly Crashes Due to Texture Cache or Memory Issues!**
+   - [Skip to Step 6](https://github.com/OatBran/7HSteamGuide#Manual-7H-Upgrading)
+   - Covers _FAQ:_ **Help! My Game Constantly Crashes Due to Texture Cache or Memory Issues! (after battle or randomly in the field)** 
+     - *Commonly known as the "Access Violation Exception"*
 
 **If you are Starting from scratch:**
 
@@ -36,6 +45,8 @@
      - Quit the game once you reach the title screen
        - **Be aware;** Launching the game via 7th Heaven disables ALL Steam features and integration
 
+### Manual 7H Upgrading
+
 6. Open the newly created 7H Modded Install directory `C:\Games\FF7\`
    - Locate the file `7H_GameDriver.dll` and RENAME this file to `_7H_GameDriver.dll.BAK`
    - Navigate to `C:\7th Heaven\Resources\Game Driver` and RENAME this file to `_7H_GameDriver.dll.BAK`
@@ -48,7 +59,7 @@
    >**Please DO NOT approach [7th Heaven Team](https://github.com/unab0mb/7h#authors) if something is not working properly.**
    
  
-7. Download FFNx. Acquire **Only** the `FFNx-FF7_1998` archive for 7H Installs! ***NOT The FFNx-Steam Release!!***
+7. Download FFNx. Acquire **Only** the `FFNx-FF7_1998` archive for 7H Installs! ***NOT The FFNx-Steam Release!!*** EXTREMELY IMPORTANT!
    - The [Stable](https://github.com/julianxhokaxhiu/FFNx/releases/) Release has the most testing and is the most reliable on average.
    - The [Canary](https://github.com/julianxhokaxhiu/FFNx/releases/tag/canary) Release Is the bleeding edge build and changes constantly. Stability varies.
 &nbsp;  
@@ -66,7 +77,9 @@
    - Ignore the included `ffnx.reg` file, do not execute it.
 
 9. Open 7th Heaven and click `Play` in the top left. 
-   - Verify that the game launches, and reaches the title screen. Game will be in a very small window. This is normal. 
+   - Verify that the game launches, and reaches the title screen. Game will be in a very small window. **This is normal.**
+     - If you do not reach the title screen, immediate crash, or only black screen. Double check you did step 7 correctly.
+     - If you instead get Null Reference Exception, [read this](https://github.com/OatBran/7HSteamGuide#Common-Game-Launch-Problems)
    - Quit the game.
 
 ## Manual Configuration of FFNx
@@ -77,7 +90,7 @@
    - Locate the file `ffnx.cfg` and OPEN this file with a text editor.
    - READ though this file, and locate settings you want to change. REMOVE leading \# Symbols to set values to be read at runtime.
      - Copy any of these to your clipboard and search in-file with `CTRL+F` if you cant locate them
-   - DOUBLE CHECK for typos and removal of comment \# symbols for each change you make. Common Changes are;
+   - DOUBLE CHECK for typos and removal of comment \# symbols for each change you make. THIS IS VITAL! DO NOT FORGET!!
      - `renderer_backend`
        - `Direct3D11` is commonly reported to perform well.
      - `fullscreen`  
@@ -85,7 +98,8 @@
      - `resolution settings`  \( are a collection of the following 2 values \)       
        - `window_size_x = 1920`  
        - `window_size_y  = 1080`
-         - If your `fullscreen = yes` leave both set to 0 to use your desktop resolution.
+         - If your `fullscreen = yes` leave both set to 0 to use your desktop resolution. 
+           - For `fullscreen = no` [Use This Chart to aid in determining your desired resolution](https://en.wikipedia.org/wiki/Display_resolution#/media/File:Vector_Video_Standards8.svg)
      - `resolution_scale` 
        - Experiencing high RAM usage and graphical errors using many PNG texture IRO's ? 
        - Change value to 2 for better performance, [or use DDS textures.](https://github.com/OatBran/7HSteamGuide#PNG-To-DDS-Conversion)
@@ -100,8 +114,19 @@
        - `ff7_more_debug`
          - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes
      - SAVE the file and exit the editor.
-  - [Link to bottom of Readme](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
+  - [Jump to bottom of Readme](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
     - I have prepared a set of ffnx.cfg files that cover common setting variations
+
+  - Be aware that there is no configuration option for preferred display adapter. Your primary display will be used for fullscreen runtimes.
+    - It has been reported (but not confirmed!) by @Barachiel that very high DPI settings in combination with >1440p HD resolution settings can cause graphical glitches with models displayed in the game. Try lowering your DPI to <200 if possible in the event of glitchy models being displayed.
+    - If you want to play on your secondary / tertiary display, you need to use windowed mode. There is a fullscreen borderless window mod on the 7H catalog that you can use in this case.
+
+  - **If you are planning on using the maximum amount of HD models/textures and/or in combination with the Cetra/ECHOS/CAMS mod, you may want to do the following**
+    - [Apply the Large-Address-Aware patch](https://ntcore.com/files/4gb_patch.zip) to `C:\Games\FF7\ff7.exe` allowing the game to utilize 3.5GB of RAM, effecively doubling the capacity for mod data.
+
+## Acquiring and Installing IROs
+
+**Finally you are ready to start installing your mods**
 
 11. Open 7th Heaven and browse/download catalog IRO's, or [manually download IRO mod packs](http://forums.qhimm.com/index.php) prioritize [DDS converted packs.](https://forums.qhimm.com/index.php?topic=19204.0)
    - For manual IRO Downloads, Click on `Import-Mod` Button in right sidebar to open IRO import tool. 
@@ -119,13 +144,13 @@
     - Consider [upgrading your PNG texture packs to DDS Format](https://github.com/OatBran/7HSteamGuide#PNG-To-DDS-Conversion) if using the catalog IRO's for better performance 
 
 
-## Common Game Launch Problems
+### Common Game Launch Problems
 
 **A series of issues after installing / upgrading  7th Heaven with FFNx**
 
    - Covers _FAQ:_ **Help! I'm getting the `Value cannot be null. Parameter name: input` Error on launch**
 
-* This error means you have a corrupt/incorrect `7H_GameDriver.dll` Usually by doing [step 6 above incorrectly,](https://github.com/OatBran/7HSteamGuide#FF7-7thHeaven-Steam-Conversion) or a somehow faulty 7th Heaven Installation. Restart the process and try again 
+* This error means you have a corrupt/incorrect `7H_GameDriver.dll` Usually by doing [step 6 above incorrectly,](https://github.com/OatBran/7HSteamGuide#FF7-7thHeaven-Steam-Conversion) or a somehow faulty 7th Heaven Installation. Repeat step 6 correctly, or Restart the entire process and try again 
    - Before you attempt to repair a broken installation, ensure a backup of your user data. \( if any relevant data exists \)
 
 1. Backup your `*.iro` mods by copying `C:\Games\FF7\mods\` to a new location; Ex. `C:\7h-mods-backup\`
@@ -145,8 +170,14 @@
 
 6. [Restart install process from beginning;](https://github.com/OatBran/7HSteamGuide#FF7-7thHeaven-Steam-Conversion)
 
+### YARRRRRR!
 
-## PNG To DDS Conversion
+**If you instead get the following `Error code: YARR! Unable to continue. Please report this error on the Qhimm forums.`**
+
+ - Save yourself the embarassment of actually posting on the forums, because you more than likely are trying to use a pirated copy of the game. **This can happen with language "patches"** even with a valid purchased copy. If you believe that a legitimate copy has been a target of a false-positive, then please by all means contact @Unab0mb on the forums or discord and provide your proof. Do not waste our time trying to pass a pirated copy as legitimate. You will not succeed. There has only ever been 1 semi-false positive proven in the entire history of the community. Just spend the $5 and buy a legit copy.
+
+
+# PNG To DDS Conversion
 
 **How to Identify, Convert and Replace PNG-Based Texture Packs**
   
@@ -192,8 +223,10 @@
 ## Manual PNG To DDS Conversion
 
 **Optional but recommended - Mixing texture formats is not optimal for performance!** 
+
 - Covers _FAQ:_ **I have other PNG mods that arent included in the pack builder!** 
     - Includes mods such as ESUI, Avatars, Gameplay mods with textures, etc.
+- **During Manual DDS Conversion, ONLY graphical-related mods are required to be converted. (PNG textures+mipmaps only) However, the following tool allows conversion of any IRO it just extends the conversion time needlessly.**
 
 9. [Download the PNG to DDS Converter tool by satsuki](http://forums.qhimm.com/index.php?topic=19701.0)
    - Extract archive to a working directory; Ex. `C:\PNG2DDS\`
@@ -212,8 +245,13 @@
 
 12. Import and configure the converted IRO's via the same method [outlined in steps 5 & 6 above.](https://github.com/OatBran/7HSteamGuide#PNG-To-DDS-Conversion)
 
-## FFNx.cfg Collection
-DONT USE THESE RIGHT NOW. NEED TO UPDATE THEM FOR RECENT STABLE FFNX RELEASE!
+**Additional DDS Texture Mod Information**
+
+- If you have a mod list that contains BOTH DDS and PNG mods active simultaneously, be aware that due to the way the windows API functions with FFNx, data is sent as it appears in the load order. However, PNG textures are considered FALLBACK/LEGACY by FFNx, and DDS format is prioritized. Meaning, If you want a PNG texture mod to be loaded instead of a DDS one and you have it set before (i.e ABOVE) the DDS version, it will make no difference. The DDS mod will take priority no matter what. This can cause issues between mods that share file structure. Part of a PNG mod can and WILL be overwritten by the DDS portion of another. Hopefully that explaination made sense. Try your best to only use one format or the other. At least pay extra attention to your active toggles and load order in the event you have a heavily mixed-format mod list in your 7th Heaven client. (7H PROFILES ARE YOUR FRIEND HERE)
+
+# FFNx.cfg Collection
+
+**DONT USE THESE RIGHT NOW. NEED TO UPDATE THEM FOR RECENT STABLE FFNX RELEASE!**
 
 **Here are some common use case scenario settings files for you to download if you wish**
    - Click the link you want, once the page loads
@@ -269,7 +307,7 @@ DONT USE THESE RIGHT NOW. NEED TO UPDATE THEM FOR RECENT STABLE FFNX RELEASE!
 - *\[SithLord48\]*
 - *\[LordUrQuan\]*
 
-## End of Guide
+# End of Guide
 
 **Go back to the [Forum Thread](http://forums.qhimm.com/index.php?topic=19932) and tell me what you think! Or post questions if you are having trouble!**
 
