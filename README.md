@@ -1,6 +1,3 @@
-## Todo
-update cfg files
-
 # FF7 7thHeaven Steam Conversion
  
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
