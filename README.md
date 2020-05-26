@@ -1,4 +1,3 @@
-
 # FF7 7thHeaven Steam Conversion
  
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
@@ -88,10 +87,13 @@
 **After verifying FFNx is installed correctly, you may want to change its behavior.** 
 
 10. Navigate to the 7H Modded Install `C:\Games\FF7\` \( [*Or another FFNx.dll Installation*](https://github.com/julianxhokaxhiu/FFNx#how-to-install) \)
+   
    - Locate the file `ffnx.cfg` and OPEN this file with a text editor.
    - READ though this file, and locate settings you want to change. REMOVE leading \# Symbols to set values to be read at runtime.
      - Copy any of these to your clipboard and search in-file with `CTRL+F` if you cant locate them
-   - DOUBLE CHECK for typos and removal of comment \# symbols for each change you make. THIS IS VITAL! DO NOT FORGET!!
+   - DOUBLE CHECK for typos and removal of comment \# symbols for each change you make. 
+     - THIS IS VITAL! DO NOT FORGET!!
+     
      - `renderer_backend`
        - `Direct3D11` is commonly reported to perform well.
      - `fullscreen`  
@@ -107,24 +109,26 @@
      - `preserve_aspect` 
        - Set to `no` if you want the black sidebars removed and render stretched to window size.
    - READ through the rest of the file and decide if you want to make other uncommon changes. 
-     - Valid configuration options are listed in the .cfg file itself.
+     - Valid configuration options are listed in the .cfg file itself. 
+     - Lines containing values to modify are preceeded by a line of `~~~~~~~`
    - *Debugging Options*
-      - `show_stats`
-        - Set to `yes` to show debug related stats on the title bar if windowed / top-left corner if fullscreen
-      - `renderer_debug`
-        - Set to `yes` to show extended debug info to the screen. Dont use unless you know what to do with the info.
-      - `ff7_more_debug`
-        - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes    
+     - `show_stats`
+       - Set to `yes` to show debug related stats on the title bar if windowed / top-left corner if fullscreen
+     - `renderer_debug`
+       - Set to `yes` to show extended debug info to the screen. Dont use unless you know what to do with the info.
+     - `ff7_more_debug`
+       - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes    
+    
     - SAVE the file and exit the editor.
    
-   - [Dont Click This](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
-    - I Will prepare a set of ffnx.cfg files that cover common setting variations
+    - [Dont Click This](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
+     - I Will prepare a set of ffnx.cfg files that cover common setting variations
 
-   - Be aware that there is no configuration option for preferred display adapter. Your primary display will be used for fullscreen runtimes.
+  - Be aware that there is no configuration option for preferred display adapter. Your primary display will be used for fullscreen runtimes.
     - It has been reported (but not confirmed!) by @Barachiel that very high DPI settings in combination with >1440p HD resolution settings can cause graphical glitches with models displayed in the game. Try lowering your DPI to <200 if possible in the event of glitchy models being displayed.
     - If you want to play on your secondary / tertiary display, you need to use windowed mode. There is a fullscreen borderless window mod on the 7H catalog that you can use in this case.
 
-   - **If you are planning on using the maximum amount of HD models/textures and/or in combination with the Cetra/ECHOS/CAMS mod, you may want to do the following**
+  - **If you are planning on using the maximum amount of HD models/textures and/or in combination with the Cetra/ECHOS/CAMS mod, you may want to do the following**
     - [Apply the Large-Address-Aware patch](https://ntcore.com/files/4gb_patch.zip) to `C:\Games\FF7\ff7.exe` allowing the game to utilize 3.5GB of RAM, effecively doubling the capacity for mod data.
 
 ## Acquiring and Installing IROs
