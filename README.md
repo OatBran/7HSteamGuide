@@ -1,3 +1,6 @@
+## Todo
+update cfg files
+
 # FF7 7thHeaven Steam Conversion
  
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
@@ -119,9 +122,9 @@
      - `ff7_more_debug`
        - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes    
     
-    - SAVE the file and exit the editor.
+   - SAVE the file and exit the editor.
    
-    - [Dont Click This](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
+   - [Dont Click This](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
      - I Will prepare a set of ffnx.cfg files that cover common setting variations
 
   - Be aware that there is no configuration option for preferred display adapter. Your primary display will be used for fullscreen runtimes.
