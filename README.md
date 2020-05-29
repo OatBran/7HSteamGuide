@@ -3,13 +3,13 @@
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
    - Written By: [OatBran](http://forums.qhimm.com/index.php?action=profile;u=27603) 
    - For 7H Version 2.0.3.406 & [FF7 Steam Build 115956](https://steamdb.info/depot/39143/manifests/) \[ ENGLISH \]
-     - Last Guide Update: May 29th, 2020
+     - Last Guide Update: May 25th, 2020
 
 # Pre-Requisets
 
 **Be Absolutely Sure you have done the following before following this guide**
   - **[Purchase a LEGAL copy of Final Fantasy 7 on Steam](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/)**
-    - 7th Heaven is ONLY compatible with the ENGLISH version of FF7 [Dragoon_2004 Provides a simple manual conversion process outlined here](http://puu.sh/FNUYc/8e15a54ec8.png)
+    - 7th Heaven is ONLY compatible with the ENGLISH version of FF7 [Dragoon_2004 Provides a simple manual conversion process outlined here.](http://puu.sh/FNUYc/8e15a54ec8.png) Be aware this is not a recommended or verified process that will work without issue.
       - Or you can try the bundled GameConverter.exe that comes with 7th Heaven located in its resources folder.
   - **There is Absolutely [NO SUPPORT](https://github.com/OatBran/7HSteamGuide#YARRRRRR) for Pirated copies of the game**
     - **This can include certain unofficial "Language Packs" - Be Cautious**
