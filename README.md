@@ -3,7 +3,7 @@
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
    - Written By: [OatBran](http://forums.qhimm.com/index.php?action=profile;u=27603) 
    - For 7H Version 2.0.3.406 & [FF7 Steam Build 115956](https://steamdb.info/depot/39143/manifests/) \[ ENGLISH \]
-     - Last Guide Update: May 25th, 2020
+     - Last Guide Update: May 29th, 2020
 
 # Pre-Requisets
 
@@ -14,8 +14,7 @@
   - **There is Absolutely [NO SUPPORT](https://github.com/OatBran/7HSteamGuide#YARRRRRR) for Pirated copies of the game**
     - **This can include certain unofficial "Language Packs" - Be Cautious**
   - **Change your [Folder View Settings](https://kb.blackbaud.com/articles/Article/41890) to properly display files, to avoid renaming mistakes**
-  - **Be aware of the version of Windows you are using. FFNx is incompatible with windows 7 or earlier as of version 1.6.1**
-    - **You can [still download FFNx v1.6.1 here](https://github.com/julianxhokaxhiu/FFNx/releases/tag/1.6.1) if you are determined to use Win7**
+  - **Be aware of the version of Windows you are using. FFNx is only compatible with windows 7 or higher as of version 1.6.1**
 
 
 # Beginning The Process
