@@ -48,10 +48,10 @@ as well as change the UI of 7H itself but i havent written that yet - if people 
        - **Be aware;** Launching the game via 7th Heaven disables ALL Steam features and integration
 
 ### Manual 7H Upgrading
+**THERES NO SUPPORT FOR THIS AND YOU PROBABLY WONT BENEFIT FROM TRYING THIS SO SKIP TO THE NEXT SECTION**
 
 6. Open the newly created 7H Modded Install directory `C:\Games\FF7\`
-   - Locate the file `7H_GameDriver.dll` and RENAME this file to `_7H_GameDriver.dll.BAK`
-   - Navigate to `C:\7th Heaven\Resources\Game Driver` and RENAME this file to `_7H_GameDriver.dll.BAK`
+   - Locate the file `ffnx.dll` and RENAME this file to `ffnx.dll.BAK`
    - As you proceed from here on, Keep the following in mind.  
 &nbsp;
 &nbsp;  
@@ -74,13 +74,14 @@ as well as change the UI of 7H itself but i havent written that yet - if people 
    >If you plan to update Canary builds frequently KEEP BACKUPS of previous builds in case of instability or other unforeseen issues!
 
 
-8. Extract the downloaded `FFNx-FF7-1998` archive to your 7H Modded Install `C:\Games\FF7\`
-   - Locate the recently extracted file `ffnx.dll` and RENAME this file to `7H_GameDriver.dll`
+8. Extract the downloaded `FFNx-FF7-1998` archive to BOTH of these locations:
+   - your 7H Modded Install directory `C:\Games\FF7\`
+   - the 7H resources folder `C:\7th Heaven\Resources\Game Driver` overwriting all the files. might want to backup the whole game driver folder first. 
    - Ignore the included `ffnx.reg` file, do not execute it.
 
 9. Open 7th Heaven and click `Play` in the top left. 
    - Verify that the game launches, and reaches the title screen. Game will be in a very small window. **This is normal.**
-     - If you do not reach the title screen, immediate crash, or only black screen. Double check you did step 7 correctly.
+     - If you do not reach the title screen, immediate crash, or only black screen. Double check you did step 6-8 correctly.
      - If you instead get Null Reference Exception, [read this](https://github.com/OatBran/7HSteamGuide#Common-Game-Launch-Problems)
    - Quit the game.
 
@@ -157,7 +158,7 @@ as well as change the UI of 7H itself but i havent written that yet - if people 
 
    - Covers _FAQ:_ **Help! I'm getting the `Value cannot be null. Parameter name: input` Error on launch**
 
-* This error means you have a corrupt/incorrect `7H_GameDriver.dll` or a somehow faulty 7th Heaven Installation. use a compatible graphics driver, or Restart the entire process from scratch and try again. Make absolutely sure you did step 6 correctly if you manually updated FFnX. There are TWO copies/places to make changes to the graphics driver file.
+* This error means you have a corrupt/incorrect `ffnx.dll` or a somehow faulty 7th Heaven Installation. use a compatible graphics driver, or Restart the entire process from scratch and try again. Make absolutely sure you did step 6 correctly if you manually updated FFnX. if you are upgrading from a 7H 2.0 install and you used a super old version of ffnx previously, then thats the problem you need to remove the ffnx.dll from the modded game install directory. `C:\Games\FF7\` and 7H will copy a newer one in there for you when you hit play, fixing the error.
    - Before you attempt to repair a broken installation, ensure a backup of your user data. \( if any relevant data exists \)
 
 1. Backup your `*.iro` mods by copying `C:\Games\FF7\mods\` to a new location; Ex. `C:\7h-mods-backup\`
