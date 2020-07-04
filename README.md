@@ -11,8 +11,8 @@
   - **[Purchase a LEGAL copy of Final Fantasy 7 on Steam](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/)**
     - 7th Heaven is ONLY compatible with the English, French, German, and Spanish versions of FF7
       - Or you can try the bundled GameConverter.exe that comes with 7th Heaven located in its resources folder.
+  - **There is Absolutely [NO SUPPORT]() for manually updating or modifying your 7th Heaven client installation! assess the possible benefits and risks before you decide to try unsupported things!**
   - **There is Absolutely [NO SUPPORT](https://github.com/OatBran/7HSteamGuide#YARRRRRR) for Pirated copies of the game**
-  - **There is Absolutely [NO SUPPORT]() for manually updating or modifying your 7th Heaven client installation! Theres little benefit of doing so**
     - **This can include certain unofficial "Language Packs" - Be Cautious**
   - **Change your [Folder View Settings](https://kb.blackbaud.com/articles/Article/41890) to properly display files, to avoid renaming mistakes**
   - **Be aware of the version of Windows you are using. FFNx is only compatible with windows 7 or higher as of version 1.6.1**
