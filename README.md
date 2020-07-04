@@ -2,27 +2,30 @@
  
 **A Detailed 7th Heaven 2.0+ Guide With Manual FFNx Update**
    - Written By: [OatBran](http://forums.qhimm.com/index.php?action=profile;u=27603) 
-   - For 7H Version 2.0.3.406 & [FF7 Steam Build 115956](https://steamdb.info/depot/39143/manifests/) \[ ENGLISH \]
-     - Last Guide Update: May 25th, 2020
+   - For 7H Version 2.2.1.485 & [FF7 Steam Build 115956](https://steamdb.info/depot/39143/manifests/)
+     - Last Guide Update: July 3rd, 2020
 
 # Pre-Requisets
 
 **Be Absolutely Sure you have done the following before following this guide**
   - **[Purchase a LEGAL copy of Final Fantasy 7 on Steam](https://store.steampowered.com/app/39140/FINAL_FANTASY_VII/)**
-    - 7th Heaven is ONLY compatible with the ENGLISH version of FF7 [Dragoon_2004 Provides a simple manual conversion process outlined here.](http://puu.sh/FNUYc/8e15a54ec8.png) Be aware this is not a recommended or verified process that will work without issue.
+    - 7th Heaven is ONLY compatible with the English, French, German, and Spanish versions of FF7
       - Or you can try the bundled GameConverter.exe that comes with 7th Heaven located in its resources folder.
   - **There is Absolutely [NO SUPPORT](https://github.com/OatBran/7HSteamGuide#YARRRRRR) for Pirated copies of the game**
     - **This can include certain unofficial "Language Packs" - Be Cautious**
   - **Change your [Folder View Settings](https://kb.blackbaud.com/articles/Article/41890) to properly display files, to avoid renaming mistakes**
   - **Be aware of the version of Windows you are using. FFNx is only compatible with windows 7 or higher as of version 1.6.1**
+  
+  
+# HEY USER READING THIS GUIDE!!!
+**7th Heaven now uses FFnX natively with a default installation!, you dont have to manually alter the 7H installation anymore to solve common issues caused by the use of the legacy Aali driver. However, 7H gets updated fairly rarely, and is actually in beta right now. FFnX actually gets updated daily pretty much, so if you want to use a canary version of FFnX, or possibly a stable version upgrade that is released ahead of its incorporation into 7H itself you may want to still follow the contents of this section, but depending on factors at the time it may provide relatively little value to go through the effort.**
 
+**If you would rather just play with the stable version chosen for the release of 7H but you want to either:
+learn how to acquire and use IRO mods in the first place, [skip here.](https://github.com/OatBran/7HSteamGuide#Acquiring-and-Installing-IROs)
+or just convert/use all DDS texture mods for enhanced performance: [skip here.](https://github.com/OatBran/7HSteamGuide#PNG-To-DDS-Conversion)**
 
-# Beginning The Process
-
-**If you are Upgrading from a currently working 7H v2+ modded installation**
-   - [Skip to Step 6](https://github.com/OatBran/7HSteamGuide#Manual-7H-Upgrading)
-   - Covers _FAQ:_ **Help! My Game Constantly Crashes Due to Texture Cache or Memory Issues! (after battle or randomly in the field)** 
-     - *Commonly known as the "Access Violation Exception"*
+**You can also manually [change all the config options](https://github.com/OatBran/7HSteamGuide#Manual-Configuration-of-FFNx) that are not included in the UI of 7H.
+as well as change the UI of 7H itself but i havent written that yet - if people even want to know how to do that or want me to just make a custom xml to be distributed here then [let me know!](http://forums.qhimm.com/index.php?topic=19932)**
 
 **If you are Starting from scratch:**
 
@@ -119,9 +122,7 @@
        - Set to `yes` to write many engine related things to a log file, use only if you are troubleshooting crashes    
     
    - SAVE the file and exit the editor.
-   
-   - [Dont Click This](https://github.com/OatBran/7HSteamGuide#FFNXcfg-Collection)
-     - I Will prepare a set of ffnx.cfg files that cover common setting variations
+
 
   - Be aware that there is no configuration option for preferred display adapter. Your primary display will be used for fullscreen runtimes.
     - It has been reported (but not confirmed!) by @Barachiel that very high DPI settings in combination with >1440p HD resolution settings can cause graphical glitches with models displayed in the game. Try lowering your DPI to <200 if possible in the event of glitchy models being displayed.
@@ -156,7 +157,7 @@
 
    - Covers _FAQ:_ **Help! I'm getting the `Value cannot be null. Parameter name: input` Error on launch**
 
-* This error means you have a corrupt/incorrect `7H_GameDriver.dll` Usually by doing [step 6 above incorrectly,](https://github.com/OatBran/7HSteamGuide#FF7-7thHeaven-Steam-Conversion) or a somehow faulty 7th Heaven Installation. Repeat step 6 correctly, or Restart the entire process and try again 
+* This error means you have a corrupt/incorrect `7H_GameDriver.dll` or a somehow faulty 7th Heaven Installation. use a compatible graphics driver, or Restart the entire process from scratch and try again. Make absolutely sure you did step 6 correctly if you manually updated FFnX. There are TWO copies/places to make changes to the graphics driver file.
    - Before you attempt to repair a broken installation, ensure a backup of your user data. \( if any relevant data exists \)
 
 1. Backup your `*.iro` mods by copying `C:\Games\FF7\mods\` to a new location; Ex. `C:\7h-mods-backup\`
@@ -254,54 +255,6 @@
 **Additional DDS Texture Mod Information**
 
 - If you have a mod list that contains BOTH DDS and PNG mods active simultaneously, be aware that due to the way the windows API functions with FFNx, data is sent as it appears in the load order. However, PNG textures are considered FALLBACK/LEGACY by FFNx, and DDS format is prioritized. Meaning, If you want a PNG texture mod to be loaded instead of a DDS one and you have it set before (i.e ABOVE) the DDS version, it will make no difference. The DDS mod will take priority no matter what. This can cause issues between mods that share file structure. Part of a PNG mod can and WILL be overwritten by the DDS portion of another. Hopefully that explaination made sense. Try your best to only use one format or the other. At least pay extra attention to your active toggles and load order in the event you have a heavily mixed-format mod list in your 7th Heaven client. (7H PROFILES ARE YOUR FRIEND HERE)
-
-# FFNx.cfg Collection
-
-**DONT USE THESE RIGHT NOW. NEED TO UPDATE THEM FOR RECENT STABLE FFNX RELEASE!**
-
-**Here are some common use case scenario settings files for you to download if you wish**
-   - Click the link you want, once the page loads
-   - Hit `CTRL+S` & replace your ffnx.cfg in `C:\Games\FF7\` with any **ONE** of these
-
-**1080p HD WINDOWED**
-   - **OpenGL**
-     - [Proper-Aspect Ratio Vsync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/PA/FFNx.cfg) 
-     - [Proper-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/PADBG/FFNx.cfg)
-     - [Proper-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/PANVS/FFNx.cfg) 
-     - [Proper-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/PANVSDBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio VSync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/SA/FFNx.cfg) 
-     - [Stretched-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/SADBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/SANVS/FFNx.cfg) 
-     - [Stretched-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/OPENGL/SANVSDBG/FFNx.cfg)
-   - **DirectX 11**
-     - [Proper-Aspect Ratio Vsync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/PA/FFNx.cfg)
-     - [Proper-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/PADBG/FFNx.cfg)
-     - [Proper-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/PANVS/FFNx.cfg)
-     - [Proper-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/PANVSDBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio VSync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/SA/FFNx.cfg)
-     - [Stretched-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/SADBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/SANVS/FFNx.cfg)
-     - [Stretched-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/WINDOWED/DX11/SANVSDBG/FFNx.cfg)
-
-**SD/HD FULLSCREEN**
-   - **OpenGL**
-     - [Proper-Aspect Ratio Vsync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/PA/FFNx.cfg) 
-     - [Proper-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/PADBG/FFNx.cfg)
-     - [Proper-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/PANVS/FFNx.cfg) 
-     - [Proper-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/PANVSDBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio VSync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/SA/FFNx.cfg) 
-     - [Stretched-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/SADBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/SANVS/FFNx.cfg) 
-     - [Stretched-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/OPENGL/SANVSDBG/FFNx.cfg)
-   - **DirectX 11**
-     - [Proper-Aspect Ratio Vsync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/PA/FFNx.cfg)
-     - [Proper-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/PADBG/FFNx.cfg)
-     - [Proper-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/PANVS/FFNx.cfg)
-     - [Proper-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/PANVSDBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio VSync Enabled](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/SA/FFNx.cfg)
-     - [Stretched-Aspect Ratio VSync Enabled With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/SADBG/FFNx.cfg)
-     - [Stretched-Aspect Ratio NO VSync](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/SANVS/FFNx.cfg)
-     - [Stretched-Aspect Ratio NO VSync With Debug Options ON](https://raw.githubusercontent.com/OatBran/7HSteamGuide/master/CFG/FULLSCREEN/DX11/SANVSDBG/FFNx.cfg)
 
 ## Thanks
 
