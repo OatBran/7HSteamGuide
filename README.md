@@ -32,7 +32,7 @@ as well as change the UI of 7H itself but i havent written that yet - if people 
 
 1. Install FF7 via Steam Client and/or [Verify Integrity of Game Cache](https://support.steampowered.com/kb_article.php?ref=2037-QEUH-3335)
 
-2. [Download 7th Heaven](http://7thheaven.rocks/)
+2. [Download 7th Heaven 2.2 BETA](http://7thheaven.rocks/releases/Setup-SeventhHeaven-BETA-v2.2.1.486.exe)
 
 3. Open the 7H Installer and install 7th Heaven to default location `C:\7th Heaven\`
 
